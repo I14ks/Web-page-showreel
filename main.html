@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Made by I14cks</title>
+</head>
+<body>
+    <header class="start-animation" style="z-index: 2;">
+        <ul>
+            <li class="start-animation" id="i14cks">I14cKs</li>
+            <li class="start-animation" id="about-us">О нас</li>
+            <li class="start-animation" id="dropdown-starter">Контакты</li>
+        </ul>
+    </header>
+    <main>
+        <h1 class="start-animation">Мальчик который выжил</h1>
+        <p class="first-article start-animation">Последний Frontend-разработчик старой закалки... </p>
+        <p class="first-article start-animation">Человек не принявший принципы VibeCoding'а, до сих пор понимающий, что делает его код.</p>
+        <div id="midline" class="start-animation">
+            <ul>
+                <li class="midline">
+                    <h2>
+                        Широкий спектр навыков
+                    </h2>
+                    <img src="svg/skills.svg" class="svg-middle" alt="">
+                </li>
+                <li class="midline">
+                    <h2>Большой опыт в разработке</h2>
+                    <img src="svg/experience.svg" class="svg-middle" alt="">
+                </li>
+                <li class="midline">
+                    <h2>
+                        >3 лет на фрилансе
+                    </h2>
+                    <img src="svg/time.svg" class="svg-middle" alt="">
+                </li>
+            </ul>
+        </div>
+        <h1 class="start-animation" id="cards-title">Почему мы?</h1>
+        <div id="card-holder" class="start-animation">
+            <div class="card" id="card-1-foreground" onclick="this.classList.add('animatedForward');
+            setTimeout(()=>{this.style.display='none';
+            const backGround=document.getElementById('card-1-background');
+            backGround.style.display='block';
+            backGround.classList.add('animatedForward');}, 270)">
+                <h3>1</h3>
+            </div>
+            <div class="cardBackground" id="card-1-background" onclick="this.classList.add('animatedBackward');
+            setTimeout(()=>{this.style.display='none';
+                const foreGround=document.getElementById('card-1-foreground');
+                foreGround.style.display='block';
+                foreGround.classList.add('animatedBackward');
+                setTimeout(()=>{foreGround.className='card';
+                    this.className='cardBackground';
+                }, 270)}, 270)">
+                <h3>Слаженная команда</h3>
+                <p>Мы работаем неизменным составом уже 2 года и добились значительных результатов</p>
+            </div>
+            <div class="card" id="card-2-foreground" onclick="this.classList.add('animatedForward');
+            setTimeout(()=>{this.style.display='none';
+            const backGround=document.getElementById('card-2-background');
+            backGround.style.display='block';
+            backGround.classList.add('animatedForward');}, 270)">
+                <h3>2</h3>
+            </div>
+            <div class="cardBackground" id="card-2-background" onclick="this.classList.add('animatedBackward');
+            setTimeout(()=>{this.style.display='none';
+                const foreGround=document.getElementById('card-2-foreground');
+                foreGround.style.display='block';
+                foreGround.classList.add('animatedBackward');
+                setTimeout(()=>{foreGround.className='card';
+                    this.className='cardBackground';
+                }, 270)}, 270)">
+                <h3>Студенты лучших технологических ВУЗов страны</h3>
+                <p>Все участники нашей команды являются выпустившимися или действующими студентами лучших Российских ВУЗов: 
+                    НИУ ВШЭ, РТУ МИРЭА и другие
+                </p>
+            </div>
+            <div class="card" id="card-3-foreground" onclick="this.classList.add('animatedForward');
+            setTimeout(()=>{this.style.display='none';
+            const backGround=document.getElementById('card-3-background');
+            backGround.style.display='block';
+            backGround.classList.add('animatedForward');}, 270)">
+                <h3>3</h3>
+            </div>
+            <div class="cardBackground" id="card-3-background" onclick="this.classList.add('animatedBackward');
+            setTimeout(()=>{this.style.display='none';
+                const foreGround=document.getElementById('card-3-foreground');
+                foreGround.style.display='block';
+                foreGround.classList.add('animatedBackward');
+                setTimeout(()=>{foreGround.className='card';
+                    this.className='cardBackground';
+                }, 270)}, 270)">
+                <h3>Профильные специалисты</h3>
+                <p>Наши специалисты - люди привыкшие решать нестандартные задачи любой сложности,
+                    креативно подходящие к процессу создания цифрового продукта
+                </p>
+            </div>
+        </div>
+
+        <div id="bottom-line" class="start-animation2">
+            <h1>Необходимый ВАМ цифровой продукт</h1>
+            <p class="second-article">Создадим уникальный дизайн, который будет подчёркивать сильные стороны вашего предприятия,
+                анимируем главную страницу
+            </p>
+        </div>
+    </main>
+    <footer class="start-animation2">
+        <h1>I14cKs</h1>
+        <h1>Связь</h1>
+        <h1>О нас</h1>
+    </footer>
+</body>
+    <script src="main.js"></script>
+
+</html>
