@@ -1,0 +1,14 @@
+@media(orientation: portrait){
+
+    li>h1{
+        font-size: clamp(1rem, 150%, 10rem);
+    }
+
+    div.card, div.cardBackground{
+        height: 40vh;
+    }
+
+    img.svg-middle{
+        margin: 10% 0;
+    }
+}

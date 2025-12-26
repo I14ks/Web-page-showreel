@@ -7,7 +7,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scrollbar-width: none;
+    scrollbar-width: auto;
+}
+
+body{
+    width: 100%;
 }
 
 header{
@@ -16,6 +20,7 @@ header{
 }
 
 footer{
+    width: 100%;
     margin-top: 2rem;
     background-image: linear-gradient(var(--mainColor), var(--secondColor));
     color: var(--textWithBackground);
@@ -29,14 +34,13 @@ ul{
     display: flex;
 }
 
-h1#cards-title{
-    margin: 0 auto;
-    text-align: center;
-}
+
 
 div#card-holder{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
+    gap: 1rem;
 }
 
 li#dropdown-starter{
@@ -67,18 +71,26 @@ img:hover{
 
 div.card{
     background-color: var(--secondColor);
-    width: 20rem;
-    height: 30rem;
+    min-width: 18rem;
+    width: 20%;
+    height: 50vh;
     color: var(--textWithBackground);
     border-radius: 5rem;
     border: 1rem var(--mainColor) solid;
-    padding: 1rem;
+    padding: 2rem;
+}
+
+div.card>h3{
+    margin-top: 50%;
+    font-size: 4rem;
+    text-align: center;
 }
 
 div.cardBackground{
     background-color: var(--secondColor);
-    width: 20rem;
-    height: 30rem;
+    min-width: 18rem;
+    width: 20%;
+    height: 50vh;
     color: var(--textWithBackground);
     border-radius: 5rem;
     border: 1rem var(--mainColor) solid;
@@ -92,12 +104,6 @@ div.card.animatedForward{
 }
 
 div.cardBackground.animatedForward{
-    background-color: var(--secondColor);
-    width: 20rem;
-    height: 30rem;
-    color: var(--textWithBackground);
-    border-radius: 5rem;
-    border: 1rem var(--mainColor) solid;
     display: block;
     transform: rotateY(-90deg);
     animation: 0.3s 0s forwards backGroundCard-turn;
@@ -132,15 +138,15 @@ div.card.animatedForward.animatedBackward{
 
 
 
-div.card>h3{
-    margin-top: 10rem;
-    font-size: 5rem;
-    text-align: center;
+
+
+
+li>h1{
+    font-size: clamp(1rem, 200%, 10rem);
 }
 
-li{
-    font-size: 2rem;
-    padding: 1rem;
+li>h2{
+    font-size: clamp(1rem, 140%, 2rem);
 }
 
 li.midline{
@@ -151,18 +157,35 @@ li.midline{
 
 h2{
     text-align: center;
-}
-
-li.i14cks{
-    font-size: 3.5rem;
+    margin: 0 10%;
 }
 
 img.svg-middle{
-    width: 4rem;
+    width: 20%;
 }
 
 li#about-us{
-    margin-left: 50%;
+    width: 30vw;
+    text-align: end;
+}
+
+h1#theSurvivedBoy{
+    font-size: clamp(1.2rem, 170%, 4rem);
+}
+
+p.first-article{
+    padding: 0 1rem;
+    font-size: clamp(1rem, 150%, 2rem);
+}
+
+h1#cards-title{
+    margin: 0 auto;
+    text-align: center;
+    font-size: clamp(1.2rem, 170%, 4rem);
+}
+
+div#bottom-line>h1{
+    font-size: clamp(1.2rem, 170%, 2rem);
 }
 
 h1{
@@ -170,32 +193,28 @@ h1{
 }
 
 div#midline{
-    height: 30vh;
     background-color: var(--secondColor);
     margin: 1rem 0;
     transition: 1s 1s;
 }
 
 div#midline.start-animation{
-    height: 0vh;
+    height: 0rem;
 }
 
 div#midline.start-animation.show{
-    height: 30vh;
+    height: max-content;
 }
 
 div#midline>ul{
     justify-content: space-around;
 }
 
-p.first-article{
-    padding-left: 1rem;
-    font-size: 1.4rem;
-}
+
 
 p.second-article{
-    padding-left: 1rem;
-    font-size: 1.4rem; 
+    margin: 0 0.5rem;
+    font-size: clamp(1rem, 150%, 2rem); 
 }
 
 .start-animation{
@@ -210,6 +229,10 @@ div#bottom-line{
     padding-bottom: 2rem;
     color: var(--textWithBackground);
 
+}
+
+footer>h1{
+    font-size: clamp(1.2rem, 170%, 2rem);
 }
 
 
