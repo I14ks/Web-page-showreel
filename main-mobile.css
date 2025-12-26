@@ -5,7 +5,7 @@
     }
 
     div.card, div.cardBackground{
-        height: 40vh;
+        height: clamp(10rem, 40vh, 25rem);
     }
 
     img.svg-middle{
