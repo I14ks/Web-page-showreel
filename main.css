@@ -65,7 +65,7 @@ img{
     transition: transform 1s;
 }
 
-img:hover{
+li>img:hover{
     transform: rotate(360deg);
 }
 
