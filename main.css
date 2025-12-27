@@ -99,6 +99,10 @@ div.cardBackground{
     padding: 2rem;
 }
 
+div#last-line>img{
+    width: 100%;
+}
+
 div.card.animatedForward{
     animation: 0.3s 0s forwards card-turn;
 }
