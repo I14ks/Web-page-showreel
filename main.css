@@ -65,7 +65,7 @@ img{
     transition: transform 1s;
 }
 
-li>img:hover{
+img:hover{
     transform: rotate(360deg);
 }
 
@@ -97,10 +97,6 @@ div.cardBackground{
     display: none;
     transform: rotateY(-90deg);
     padding: 2rem;
-}
-
-div#last-line>img{
-    width: 100%;
 }
 
 div.card.animatedForward{
